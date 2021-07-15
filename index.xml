@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Taotaoing Site</title>
+        <link>https://taotaoing.github.io/</link>
+        <description>Recent content on Taotaoing Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 15 Jul 2021 15:32:39 +0800</lastBuildDate><atom:link href="https://taotaoing.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Typora 设置自动图像上传</title>
+        <link>https://taotaoing.github.io/p/test-post/</link>
+        <pubDate>Thu, 15 Jul 2021 12:18:49 +0800</pubDate>
+        
+        <guid>https://taotaoing.github.io/p/test-post/</guid>
+        <description>&lt;h1 id=&#34;typora-设置自动图像上传&#34;&gt;Typora 设置自动图像上传&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://support.typora.io/Upload-Image/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;参考文档&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载软件&#34;&gt;下载软件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;建议使用uPic（开源免费）&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/gee1k/uPic&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;安装教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;配置upic&#34;&gt;配置uPic&lt;/h3&gt;
+&lt;p&gt;按照教程配置阿里云oss相关参数即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://image.shentaotao.com/uPic/2021/image-20210611182520775.png&#34; alt=&#34;image-20210611182520775&#34;  /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;配置typora&#34;&gt;配置Typora&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://image.shentaotao.com/uPic/2021/image-20210611182624257.png&#34; alt=&#34;image-20210611182624257&#34;  /&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>“Hugo 搭建静态博客&#34;</title>
+        <link>https://taotaoing.github.io/p/hugo-%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</link>
+        <pubDate>Thu, 15 Jul 2021 12:18:49 +0800</pubDate>
+        
+        <guid>https://taotaoing.github.io/p/hugo-%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;申涛涛 | 2021.07.14&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.gohugo.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo中文文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.gohugo.org/doc/overview/quickstart/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo官网文档翻译&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本文操作环境：mac os 11.4&lt;/p&gt;
+&lt;h2 id=&#34;安装hugo&#34;&gt;安装hugo&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;二进制安装（推荐：简单、快速）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;到 &lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/hugo/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo Releases&lt;/a&gt; 下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe）&lt;/p&gt;
+&lt;p&gt;Mac下直接使用 &lt;code&gt;Homebrew&lt;/code&gt; 安装：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-linux&#34; data-lang=&#34;linux&#34;&gt;brew install hugo
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;生成站点&#34;&gt;生成站点&lt;/h2&gt;
+&lt;p&gt;使用Hugo快速生成站点，比如希望生成到 &lt;code&gt;/path/to/site&lt;/code&gt; 路径：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ hugo new site /path/to/site
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这样就在 &lt;code&gt;/path/to/site&lt;/code&gt; 目录里生成了初始站点，进去目录：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; /path/to/site
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;站点目录结构：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  ▸ archetypes/
+  ▸ content/
+  ▸ layouts/
+  ▸ static/
+    config.toml
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;创建文章&#34;&gt;创建文章&lt;/h2&gt;
+&lt;p&gt;创建一个 &lt;code&gt;about&lt;/code&gt; 页面：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ hugo new about.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;about.md&lt;/code&gt; 自动生成到了 &lt;code&gt;content/about.md&lt;/code&gt; ，打开 &lt;code&gt;about.md&lt;/code&gt; 看下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;+++
+date = &amp;#34;2015-10-25T08:36:54-07:00&amp;#34;
+draft = true
+title = &amp;#34;about&amp;#34;
+
++++
+
+正文内容
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;内容是 &lt;code&gt;Markdown&lt;/code&gt; 格式的，&lt;code&gt;+++&lt;/code&gt; 之间的内容是 &lt;a class=&#34;link&#34; href=&#34;https://github.com/toml-lang/toml&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;TOML&lt;/a&gt; 格式的，根据你的喜好，你可以换成 &lt;a class=&#34;link&#34; href=&#34;http://www.yaml.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;YAML&lt;/a&gt; 格式（使用 &lt;code&gt;---&lt;/code&gt; 标记）或者 &lt;a class=&#34;link&#34; href=&#34;http://www.json.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;JSON&lt;/a&gt; 格式。&lt;/p&gt;
+&lt;p&gt;创建第一篇文章，放到 &lt;code&gt;post&lt;/code&gt; 目录，方便之后生成聚合页面。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ hugo new post/first.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;打开编辑 &lt;code&gt;post/first.md&lt;/code&gt; ：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+date: &amp;quot;2015-10-25T08:36:54-07:00&amp;quot;
+title: &amp;quot;first&amp;quot;
+ 
+---
+
+### Hello Hugo
+
+ 1. aaa
+ 1. bbb
+ 1. ccc
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;安装皮肤&#34;&gt;安装皮肤&lt;/h2&gt;
+&lt;p&gt;到 &lt;a class=&#34;link&#34; href=&#34;https://www.gohugo.org/theme/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;皮肤列表&lt;/a&gt; 挑选一个心仪的皮肤，比如你觉得 &lt;code&gt;cactus&lt;/code&gt; 皮肤不错，找到相关的 &lt;code&gt;GitHub&lt;/code&gt; 地址，创建目录 &lt;code&gt;themes&lt;/code&gt;，在 &lt;code&gt;themes&lt;/code&gt; 目录里把皮肤 &lt;code&gt;git clone&lt;/code&gt; 下来：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 创建 themes 目录&lt;/span&gt;
+ &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; themes
+$ git clone https://github.com/digitalcraftsman/hugo-cactus-theme.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;运行hugo&#34;&gt;运行Hugo&lt;/h2&gt;
+&lt;p&gt;在你的站点根目录执行 &lt;code&gt;Hugo&lt;/code&gt; 命令进行调试：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ hugo server --theme&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;hugo-cactus-theme --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;（注明：v0.15 版本之后，不再需要使用 &lt;code&gt;--watch&lt;/code&gt; 参数了）&lt;/p&gt;
+&lt;p&gt;浏览器里打开： &lt;code&gt;http://localhost:1313&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;部署&#34;&gt;部署&lt;/h2&gt;
+&lt;p&gt;假设你需要部署在 &lt;code&gt;GitHub Pages&lt;/code&gt; 上，首先在GitHub上创建一个Repository，命名为：&lt;code&gt;taotaoing.github.io&lt;/code&gt; （totaoing替换为你的github用户名）。&lt;/p&gt;
+&lt;p&gt;在站点根目录执行 &lt;code&gt;Hugo&lt;/code&gt; 命令生成最终页面：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ hugo --theme&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;hugo-cactus-theme --baseUrl&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;http://taotaoing.github.io/&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;（注意，以上命令并不会生成草稿页面，如果未生成任何文章，请去掉文章头部的 &lt;code&gt;draft=true&lt;/code&gt; 再重新生成。）&lt;/p&gt;
+&lt;p&gt;如果一切顺利，所有静态页面都会生成到 &lt;code&gt;public&lt;/code&gt; 目录，将pubilc目录里所有文件 &lt;code&gt;push&lt;/code&gt; 到刚创建的Repository的 &lt;code&gt;master&lt;/code&gt; 分支。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; public
+$ git init
+$ git remote add origin https://github.com/taotaoing/taotaoing.github.io.git
+$ git add -A
+$ git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;first commit&amp;#34;&lt;/span&gt;
+$ git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;浏览器里访问：&lt;code&gt;http://taotaoing.github.io/&lt;/code&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>First</title>
+        <link>https://taotaoing.github.io/p/first/</link>
+        <pubDate>Wed, 14 Jul 2021 19:19:21 +0800</pubDate>
+        
+        <guid>https://taotaoing.github.io/p/first/</guid>
+        <description>&lt;h3 id=&#34;hello-hugo&#34;&gt;Hello Hugo&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;aaa&lt;/li&gt;
+&lt;li&gt;bbb&lt;/li&gt;
+&lt;li&gt;Ccc&lt;/li&gt;
+&lt;li&gt;想到什么？&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

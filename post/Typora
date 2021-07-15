@@ -1,0 +1,26 @@
+---
+title: "Typora 设置自动图像上传"
+date: 2021-07-15T12:18:49+08:00
+draft: true
+---
+
+# Typora 设置自动图像上传
+
+[参考文档](https://support.typora.io/Upload-Image/)
+
+## 下载软件
+
+* 建议使用uPic（开源免费）
+* [安装教程](https://github.com/gee1k/uPic)
+
+### 配置uPic
+
+按照教程配置阿里云oss相关参数即可。
+
+![image-20210611182520775](https://image.shentaotao.com/uPic/2021/image-20210611182520775.png)
+
+## 配置Typora
+
+![image-20210611182624257](https://image.shentaotao.com/uPic/2021/image-20210611182624257.png)
+
+
